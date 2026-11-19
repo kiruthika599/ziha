@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ziha Shop</title>
+  <link rel="stylesheet" href="shop.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body bgcolor="#FBEAEA">
+
+  <header>
+    <h1>Ziha</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a>
+    </nav>
+  </header>
+
+  <section class="filters">
+  <h3>Filter by Category</h3>
+  <button onclick="filterProducts('all')">All</button>
+
+
+  <div class="filter-group">
+    <button class="main-filter" onclick="toggleSub('fashion')">Fashion ⬇️</button>
+    <div class="sub-filters" id="fashion">
+      <button onclick="filterProducts('Dresses')">Dresses</button>
+      <button onclick="filterProducts('accessories')">accessories</button>
+      <button onclick="filterProducts('Footware')">Footware</button>
+    </div>
+  </div>
+
+
+  <div class="filter-group">
+    <button class="main-filter" onclick="toggleSub('electronics')">Electronics ⬇️</button>
+    <div class="sub-filters" id="electronics">
+      <button onclick="filterProducts('mobiles')">Mobiles</button>
+      <button onclick="filterProducts('laptops')">Laptops</button>
+      <button onclick="filterProducts('gadgets')">Gadgets</button>
+    </div>
+  </div>
+
+
+
+  <div class="filter-group">
+    <button class="main-filter" onclick="toggleSub('beauty')">Beauty & Personal Care ⬇️</button>
+    <div class="sub-filters" id="beauty">
+      <button onclick="filterProducts('Skin&haircare')">Skin&haircare</button>
+      <button onclick="filterProducts('cosmetics')">Cosmetics</button>
+      <button onclick="filterProducts('fragrance')">Fragrance</button>
+    </div>
+  </div>
+
+   <div class="filter-group">
+    <button class="main-filter" onclick="toggleSub('home')">Home Goods⬇️</button>
+    <div class="sub-filters" id="home">
+      <button onclick="filterProducts(' Furniture')"> Furniture</button>
+      <button onclick="filterProducts('kitchenware')">kitchenware</button>
+      <button onclick="filterProducts(' decor')"> decor</button>
+    </div>
+  </div>
+
+
+
+  <div class="filter-group">
+    <button class="main-filter" onclick="toggleSub('books')">Books ⬇️</button>
+    <div class="sub-filters" id="books">
+      <button onclick="filterProducts('fiction')">Fiction</button>
+      <button onclick="filterProducts('nonfiction')">Non-fiction</button>
+      <button onclick="filterProducts('kids')">Kids</button>
+    </div>
+  </div>
+
+</section>
+
+  <!-- 🌸 Product Display Section -->
+  <section class="product-list" id="productList">
+    <!-- Products will appear here using JavaScript -->
+  </section>
+
+  <!-- 🌸 JavaScript File -->
+  <script src="shop.js"></script>
+
+</body>
+</html>

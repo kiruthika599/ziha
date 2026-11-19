@@ -1,0 +1,86 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #FFF0F5;
+  padding: 20px;
+  margin: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #F8BBD0, #F48FB1);
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 16px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  color: #880E4F;
+  font-size: 2rem;
+}
+
+.bal,
+.ral{
+  padding: 5px 20px;
+  color: aliceblue;
+  background-color:#AD1457;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 1px;
+}
+.bal:hover,
+.ral:hover{
+  box-shadow:inset 0px 0px 1px 1px #fafafa;
+}
+.checkout-container {
+  max-width: 550px;
+  margin: auto;
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.checkout-container:hover {
+  transform: translateY(-3px);
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #D81B60;
+  outline: none;
+  box-shadow: 0 0 8px rgba(216, 27, 96, 0.3);
+}
+
+button {
+  background-color: #D81B60;
+  color: white;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #AD1457;
+  transform: translateY(-2px);
+}
